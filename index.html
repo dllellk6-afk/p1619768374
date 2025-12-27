@@ -63,7 +63,24 @@
             justify-content: space-between;
         }
 
-        .logo-text { font-size: 24px; font-weight: bold; color: var(--text-main); text-decoration: none; }
+        /* تنسيق الأيقونة الجديدة في الهيدر */
+        .header-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .header-icon {
+            height: 35px;
+            width: auto;
+        }
+
+        .logo-text { 
+            font-size: 22px; 
+            font-weight: bold; 
+            color: var(--text-main); 
+        }
 
         .breadcrumbs {
             padding: 15px 0;
@@ -189,9 +206,10 @@
 
 <header>
     <div class="container header-flex">
-        <div class="logo">
-            <a href="index.html" class="logo-text">Nice One To</a>
-        </div>
+        <a href="index.html" class="header-logo-container">
+            <img src="awss.png" alt="Icon" class="header-icon">
+            <span class="logo-text">Nice One To</span>
+        </a>
     </div>
 </header>
 
@@ -234,7 +252,7 @@
                 • استرداد الأموال: يتم إعادة المبالغ عبر وسيلة الدفع الأصلية خلال 14 يوم عمل.
             </div>
 
-            <a href="https://niceonetosa.com/rre/p1619768374" class="btn-add-cart" id="addToCartBtn">إضافة للسلة</a>
+            <a href="cart.html" class="btn-add-cart" id="addToCartBtn">إضافة للسلة</a>
 
             <div class="payment-footer">
                 <p>طرق الدفع المتاحة</p>
