@@ -1,144 +1,57 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="index,follow" />
-  <title>سياسة الشحن والتوصيل | متجر كرستال بلس</title>
-  
-  <style>
-    /* تنسيق معزول لضمان الوضوح والتباين العالي للفحص البشري */
-    .ship-container {
-      --primary: #01a23f;
-      --bg-dark: #0f172a;
-      --card-dark: #1e293b;
-      --text-main: #ffffff;
-      --text-muted: #94a3b8;
-      --border-line: rgba(255,255,255,0.1);
+<div class="salla-custom-shipping" style="font-family: 'Tahoma', sans-serif; line-height: 1.8; color: #333; max-width: 1000px; margin: 20px auto; padding: 20px; direction: rtl; text-align: right;">
 
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 30px 25px;
-      background: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      border-radius: 16px;
-      line-height: 1.8;
-      border: 1px solid var(--border-line);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-
-    .ship-header {
-      text-align: center;
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 20px;
-      margin-bottom: 30px;
-    }
-
-    .ship-header h1 { font-size: 28px; margin: 0; color: var(--text-main); }
-
-    .ship-section {
-      background: var(--card-dark);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border-line);
-    }
-
-    .ship-section h2 {
-      font-size: 19px;
-      color: var(--primary);
-      margin: 0 0 15px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .en-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
-
-    .ship-section p, .ship-section li { color: var(--text-main); font-size: 15.5px; }
-
-    .highlight { color: var(--primary); font-weight: bold; }
-
-    .ship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px; }
-    @media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } }
-
-    .stat-card {
-      background: rgba(255,255,255,0.03);
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      border: 1px solid var(--border-line);
-    }
-
-    .stat-card span { display: block; }
-    .stat-title { font-size: 12px; color: var(--text-muted); }
-    .stat-value { font-size: 16px; font-weight: bold; color: var(--primary); }
-
-    .contact-box {
-      background: rgba(1, 162, 63, 0.05);
-      border-right: 4px solid var(--primary);
-      padding: 20px;
-      margin-top: 30px;
-      border-radius: 4px;
-    }
-
-    strong { color: #ffffff; }
-  </style>
-</head>
-<body>
-  <div class="ship-container">
-    <header class="ship-header">
-      <h1>سياسة الشحن والتوصيل</h1>
-      <p style="color: var(--text-muted); font-size: 14px;">Shipping & Delivery Policy - Kristal Plus Store</p>
-    </header>
-
-    <section class="ship-section">
-      <h2>نطاق الخدمة <span class="en-label">Shipping Origin & Destination</span></h2>
-      <p>يتم تجهيز وشحن جميع الطلبات من مستودعاتنا في <strong>الرياض، المملكة العربية السعودية</strong>. نحن نخدم العملاء داخل <span class="highlight">المملكة العربية السعودية فقط</span>، ولا نوفر شحناً دولياً حالياً.</p>
-    </section>
-
-    <section class="ship-section">
-      <h2>أوقات الشحن والتوصيل <span class="en-label">Delivery Timeline</span></h2>
-      <div class="ship-grid">
-        <div class="stat-card">
-          <span class="stat-title">وقت التجهيز (Handling Time)</span>
-          <span class="stat-value">0 - 24 ساعة عمل</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-title">وقت التوصيل (Transit Time)</span>
-          <span class="stat-value">2 - 5 أيام عمل</span>
-        </div>
-      </div>
-      <p style="margin-top:15px; font-size: 14.5px;">
-        <span class="highlight">ملاحظة:</span> قد تختلف مدة التوصيل في بعض المناطق النائية حسب تغطية شركة الشحن والظروف التشغيلية.
-      </p>
-      <p style="margin-top:5px; font-size: 13px; color: var(--text-muted);">* الطلبات التي تتم خلال العطلات الرسمية يتم البدء في تجهيزها في أول يوم عمل تالٍ.</p>
-    </section>
-
-    <section class="ship-section">
-      <h2>تكلفة الشحن <span class="en-label">Shipping Cost</span></h2>
-      <p>يقدم متجر كرستال بلس <span class="highlight">شحناً مجانياً بالكامل</span> لجميع الطلبات داخل المملكة العربية السعودية، لضمان تجربة تسوق شفافة وبدون تكاليف خفية.</p>
-    </section>
-
-    <section class="ship-section">
-      <h2>شركاء اللوجستيات <span class="en-label">Our Carriers</span></h2>
-      <p>يتم الشحن عبر مقدمي خدمات اللوجستيات المعتمدين (أرامكس، سمسا). ستصلك معلومات تتبع الشحنة فور صدور بوليصة الشحن عبر بريدك الإلكتروني المسجل.</p>
-    </section>
-
-    <div class="contact-box">
-      <strong>للاستفسار عن حالة شحنتك:</strong><br>
-      البريد الإلكتروني: <span dir="ltr"><strong>info&#64;kristalpls&#46;com</strong></span><br>
-      هاتف الدعم (واتساب): +966559032548
+    <div style="text-align: center; border-bottom: 3px solid #00b2a9; padding-bottom: 20px; margin-bottom: 30px;">
+        <h1 style="color: #00b2a9; font-size: 28px; margin-bottom: 5px;">سياسة الشحن والتوصيل</h1>
+        <p style="color: #777; font-size: 14px; margin-top: 0; margin-bottom: 5px;">Shipping & Delivery Policy - Nice One To</p>
+        <p style="color: #999; font-size: 13px; font-style: italic; direction: ltr;">How we process and deliver your orders within KSA.</p>
+        <div style="font-size: 12px; color: #aaa; background: #f9f9f9; display: inline-block; padding: 2px 15px; border-radius: 20px; margin-top: 10px;">آخر تحديث: 27 ديسمبر 2025 | Last Updated: Dec 27, 2025</div>
     </div>
 
-    <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:30px;">
-      هذه السياسة جزء من التزامنا بمعايير التجارة الإلكترونية المعتمدة في المملكة العربية السعودية.
-    </p>
+    <h2 style="color: #00b2a9; font-size: 19px; margin-top: 30px; border-right: 4px solid #00b2a9; padding-right: 10px;">
+        1. نطاق الشحن <span style="font-size: 12px; color: #777; font-weight: normal; margin-right: 10px;">| Shipping Scope</span>
+    </h2>
+    <p style="font-size: 14px;">يتم الشحن إلى جميع مناطق ومدن المملكة العربية السعودية فقط عبر شركات الشحن المحلية المعتمدة.
+    <br><span style="color: #666; font-size: 13px;">Shipping is available to all regions within the Kingdom of Saudi Arabia only.</span></p>
 
-    <footer style="text-align: center; margin-top: 10px; font-size: 11px; color: var(--text-muted);">
-      © 2025 متجر كرستال بلس | سجل تجاري: 7052755050
-    </footer>
-  </div>
-</body>
-</html>
+    <h2 style="color: #00b2a9; font-size: 19px; margin-top: 30px; border-right: 4px solid #00b2a9; padding-right: 10px;">
+        2. تكلفة الشحن <span style="font-size: 12px; color: #777; font-weight: normal; margin-right: 10px;">| Shipping Fees</span>
+    </h2>
+    <div style="background: #e8f5e9; border: 1px solid #2e7d32; padding: 20px; border-radius: 8px; font-size: 14px;">
+        <p style="margin: 0; color: #2e7d32; font-weight: bold;">
+            يسرنا في متجر نايس ون تو (Nice One To) تقديم خدمة الشحن "مجاناً" لجميع الطلبات داخل المملكة العربية السعودية.
+        </p>
+        <p style="direction: ltr; text-align: left; font-size: 13px; color: #2e7d32; margin-top: 10px; font-weight: bold;">
+            We are pleased to offer **FREE SHIPPING** on all orders within Saudi Arabia.
+        </p>
+    </div>
+
+    <h2 style="color: #00b2a9; font-size: 19px; margin-top: 30px; border-right: 4px solid #00b2a9; padding-right: 10px;">
+        3. مدة التوصيل المتوقعة <span style="font-size: 12px; color: #777; font-weight: normal; margin-right: 10px;">| Delivery Time</span>
+    </h2>
+    <p style="font-size: 14px;">تستغرق عملية التوصيل عادةً من <strong>2 إلى 5 أيام عمل</strong>. يرجى الملاحظة أن أيام العطل الرسمية وعطلات نهاية الأسبوع لا تدخل ضمن مدة الشحن المذكورة.
+    <br><span style="color: #666; font-size: 13px;">Estimated delivery: <strong>2-5 business days</strong> (Excluding weekends and public holidays).</span></p>
+
+    <h2 style="color: #00b2a9; font-size: 19px; margin-top: 30px; border-right: 4px solid #00b2a9; padding-right: 10px;">
+        4. معالجة وتجهيز الطلبات <span style="font-size: 12px; color: #777; font-weight: normal; margin-right: 10px;">| Order Processing</span>
+    </h2>
+    <p style="font-size: 14px;">يتم تجهيز الطلب خلال <strong>24 ساعة عمل</strong> من تأكيد عملية الدفع. سيتم تزويدك برقم تتبع فور تسليم الشحنة لشركة النقل.
+    <br><span style="color: #666; font-size: 13px;">Orders are processed within 24 hours. A tracking number will be provided once shipped.</span></p>
+
+    <h2 style="color: #00b2a9; font-size: 19px; margin-top: 30px; border-right: 4px solid #00b2a9; padding-right: 10px;">
+        5. بيانات العنوان <span style="font-size: 12px; color: #777; font-weight: normal; margin-right: 10px;">| Customer Responsibility</span>
+    </h2>
+    <p style="font-size: 14px;">يتحمل العميل مسؤولية تزويدنا بعنوان صحيح ورقم جوال فعال. في حال تعذر التسليم بسبب خطأ في البيانات، قد تفرض رسوم لإعادة الشحن.
+    <br><span style="color: #666; font-size: 13px;">Ensure providing correct address details. Any re-shipping due to incorrect data may incur fees.</span></p>
+
+    <div style="margin-top: 50px; padding: 30px; background: #2c3e50; color: #ffffff; border-radius: 8px; text-align: center;">
+        <h3 style="margin-top: 0; font-size: 20px;">استفسارات الشحن | Shipping Support</h3>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 15px; direction: ltr;">
+            <div style="font-size: 16px;"> info&#64;niceonetosa&#46;com</div>
+            <div style="font-size: 16px;"> +966539023510</div>
+        </div>
+        <p style="margin-top: 20px; font-size: 12px; color: #bdc3c7;">
+            ساعات العمل: الأحد - الخميس (9ص - 9م) | Riyadh, KSA
+        </p>
+    </div>
+
+</div>
