@@ -1,20 +1,53 @@
-// استبدل كود الـ alert القديم بهذا الكود الاحترافي
+// دالة إظهار نافذة النجاح الاحترافية (بديلة لـ alert المتصفح)
 function showSuccessMessage() {
-    const modal = document.createElement('div');
-    modal.innerHTML = `
-        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;">
-            <div style="background: white; padding: 30px; border-radius: 10px; text-align: center; max-width: 400px; width: 90%;">
-                <h3 style="color: #00b286; margin-top: 0;">شكراً لثقتك بمتجر Nice One To</h3>
-                <p>سيتم التواصل معكم لتأكيد الطلب في أقرب وقت.</p>
-                <button onclick="window.location.href='index.html'" style="background: #00b286; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; font-weight: bold;">حسناً</button>
-            </div>
-        </div>
+    // إنشاء عنصر الحاوية للنافذة
+    const modalOverlay = document.createElement('div');
+    modalOverlay.id = 'customModalOverlay';
+    modalOverlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        direction: rtl;
+        backdrop-filter: blur(4px);
     `;
-    document.body.appendChild(modal);
+
+    // محتوى النافذة المنبثقة
+    modalOverlay.innerHTML = `
+        <div style="background: white; padding: 40px 20px; border-radius: 15px; text-align: center; max-width: 400px; width: 85%; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); animation: slideIn 0.3s ease-out;">
+            <div style="width: 70px; height: 70px; background: #e6f7f3; color: #00b286; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 35px;">✓</div>
+            <h3 style="color: #333; margin: 0 0 10px; font-size: 20px; font-family: sans-serif;">تم استلام طلبك بنجاح</h3>
+            <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 25px;">شكراً لثقتك بمتجر <strong>Nice One To</strong>. سيتم التواصل معكم قريباً لتأكيد تفاصيل الشحن.</p>
+            <button id="closeModalBtn" style="background: #00b286; color: white; border: none; padding: 12px 0; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px; width: 100%; transition: background 0.2s;">حسناً</button>
+        </div>
+        <style>
+            @keyframes slideIn {
+                from { transform: translateY(-20px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            #closeModalBtn:hover { background: #009671; }
+        </style>
+    `;
+
+    document.body.appendChild(modalOverlay);
+
+    // عند الضغط على الزر، يتم التوجه للرئيسية وإغلاق النافذة
+    document.getElementById('closeModalBtn').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
 }
 
-// استدعاء الدالة عند الضغط على "تأكيد الطلب"
-document.querySelector('.btn-confirm').addEventListener('click', function(e) {
-    e.preventDefault();
-    showSuccessMessage();
-});
+// استدعاء الدالة عند الضغط على زر "تأكيد الطلب والدفع"
+const confirmBtn = document.querySelector('.btn-confirm');
+if (confirmBtn) {
+    confirmBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // منع إرسال النموذج الافتراضي
+        showSuccessMessage();
+    });
+}
