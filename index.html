@@ -70,7 +70,6 @@
             text-decoration: none;
         }
 
-        /* تعديل لضمان ظهور الأيقونة بوضوح */
         .header-icon {
             height: 35px;
             width: auto;
@@ -206,7 +205,7 @@
 
 <header>
     <div class="container header-flex">
-        <a href="index.html" class="header-logo-container">
+        <a href="https://dllellk6-afk.github.io/p1619768374/index.html" class="header-logo-container">
             <img src="https://dllellk6-afk.github.io/p1619768374/awss.png" alt="Nice One To Icon" class="header-icon">
             <span class="logo-text">Nice One To</span>
         </a>
@@ -215,7 +214,7 @@
 
 <div class="container">
     <div class="breadcrumbs">
-        <a href="index.html">الرئيسية</a>
+        <a href="https://dllellk6-afk.github.io/p1619768374/index.html">الرئيسية</a>
     </div>
 
     <main class="product-card">
@@ -249,7 +248,7 @@
                 • استرداد الأموال: يتم إعادة المبالغ عبر وسيلة الدفع الأصلية خلال 14 يوم عمل.
             </div>
 
-            <a href="cart.html" class="btn-add-cart" id="addToCartBtn">إضافة للسلة</a>
+            <a href="https://dllellk6-afk.github.io/p1619768374/cart.html" class="btn-add-cart" id="addToCartBtn">إضافة للسلة</a>
 
             <div class="payment-footer">
                 <p>طرق الدفع المتاحة</p>
@@ -267,13 +266,13 @@
         <div style="flex: 1; min-width: 200px; text-align: right;">
             <h4 style="color: #333; margin-bottom: 20px; font-size: 16px; border-right: 3px solid #00b286; padding-right: 10px;">روابط مهمة</h4>
             <ul style="list-style: none; padding: 0; line-height: 2;">  
-                <li><a href="business-identity.html" style="color: #666; text-decoration: none; font-size: 14px;">الهوية التجارية</a></li>
-                <li><a href="terms-and-conditions.html" style="color: #666; text-decoration: none; font-size: 14px;">الشروط والأحكام</a></li>
-                <li><a href="shipping-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الشحن والتوصيل</a></li>
-                <li><a href="refund-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الاستبدال والاسترجاع</a></li>
-                <li><a href="privacy-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الخصوصية</a></li>
-                <li><a href="contact.html" style="color: #666; text-decoration: none; font-size: 14px;">اتصل بنا</a></li>
-                <li><a href="about.html" style="color: #666; text-decoration: none; font-size: 14px;">من نحن</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/business-identity.html" style="color: #666; text-decoration: none; font-size: 14px;">الهوية التجارية</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/terms-and-conditions.html" style="color: #666; text-decoration: none; font-size: 14px;">الشروط والأحكام</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/shipping-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الشحن والتوصيل</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/refund-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الاستبدال والاسترجاع</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/privacy-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الخصوصية</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/contact.html" style="color: #666; text-decoration: none; font-size: 14px;">اتصل بنا</a></li>
+                <li><a href="https://dllellk6-afk.github.io/p1619768374/about.html" style="color: #666; text-decoration: none; font-size: 14px;">من نحن</a></li>
             </ul>
         </div>
 
@@ -298,7 +297,10 @@
 </footer>
 
 <script>
-    document.getElementById('addToCartBtn').addEventListener('click', function() {
+    document.getElementById('addToCartBtn').addEventListener('click', function(e) {
+        // منع السلوك الافتراضي مؤقتاً لتخزين البيانات
+        e.preventDefault();
+        
         const product = {
             id: '1619768374',
             name: 'دفتر ملاحظات بزخرفة الأبواب النجدية – أزرق A5',
@@ -309,6 +311,11 @@
 
         localStorage.setItem('salla_cart_item', JSON.stringify(product));
         this.innerText = "جاري الإضافة...";
+        
+        // الانتقال للرابط المطلوب بعد ثانية بسيطة لضمان الحفظ
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 500);
     });
 </script>
 
