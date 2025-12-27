@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إتمام الطلب - متجر كرستال بلس</title>
+    <title>إتمام الطلب - Nice One To</title>
     <style>
         :root { --salla-green: #00b286; --salla-bg: #f8f8f8; }
         body { font-family: system-ui, -apple-system, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; }
@@ -20,22 +20,27 @@
 <body>
 
     <div class="checkout-container">
+        <h2 style="font-weight: bold; color: #000;">Nice One To</h2>
         <h2>تفاصيل عنوان الشحن</h2>
         
         <form action="success.html" method="GET">
             <div class="form-group"><input type="text" placeholder="الاسم الكامل" required></div>
             <div class="form-group"><input type="tel" placeholder="رقم الجوال" required></div>
             <div class="form-group"><input type="text" placeholder="المدينة" required></div>
-            <div class="form-group"><input type="text" placeholder="العنوان" required></div>
+            <div class="form-group"><input type="text" placeholder="العنوان (الحي - الشارع)" required></div>
 
-            <button type="submit" class="btn-confirm" onclick="alert('شكراً لثقتكم! سيتم التواصل معكم لتأكيد الطلب.')">
+            <button type="submit" class="btn-confirm" onclick="alert('شكراً لثقتكم بمتجر Nice One To! سيتم التواصل معكم لتأكيد الطلب.')">
                 تأكيد الطلب والدفع
             </button>
         </form>
 
         <div class="payment-icons">
-            <img src="https://github.com/krstall78-boop/p1629236570/blob/main/payment-methods.png.png?raw=true" alt="طرق الدفع">
+            <img src="https://raw.githubusercontent.com/krstall78-boop/p1629236570/main/payment-methods.png.png" alt="طرق الدفع المتاحة">
         </div>
+        
+        <p style="text-align:center; font-size:12px; color:#999; margin-top:15px;">
+            للمساعدة تواصل معنا: +966539023510
+        </p>
     </div>
 
 </body>
